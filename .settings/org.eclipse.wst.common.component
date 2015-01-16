@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Struts2Example15">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="jboss-client.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/jboss/jboss-as-7.1.1.Final/bin/client/jboss-client.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.servlet.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/fall 2014/SWE 645/Assignments/Assignment 4/servlet-3_0-final-jar_and_schema/javax.servlet.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="Struts2Example15"/>
+        <property name="java-output-path" value="/Struts2Example15/build/classes"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,38 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="default" extends="struts-default">
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+		
+		
+		<action name="getSearchform" method="getSearchform" class="ashu.struts2.action.Student_Survey_Action">
+			<result name="success" type="tiles">search_form</result>
+		</action>
+		
+		<action name="fetchStudentList" method="fetchStudentList" class="ashu.struts2.action.Student_Survey_Action">
+			<result name="success" type="tiles">Student_Survey</result>
+		</action>
+		<action name="deleteRecord" method="deleteRecord" class="ashu.struts2.action.Student_Survey_Action">
+			<result name="success" type="tiles">Student_Survey</result>
+		</action>
+		
+		<action name="getInputSurveyPage" method="execute" class="ashu.struts2.action.Student_Survey_Action">
+			<result name="success" type="tiles">Student_Survey_Input</result>
+			<result name="input" type="tiles">Student_Survey_Input</result>
+		</action>
+		
+		<action name="getSuccessPage" method="getSuccessPage" class="ashu.struts2.action.Student_Survey_Action">
+			<result name="success" type="tiles">success</result>
+			<result name="input" type="tiles">Student_Survey_Input</result>
+			<result name="winner" type="tiles">winner</result>
+		</action>
+		    
+            
+      
+		
+	</package>
+</struts>
